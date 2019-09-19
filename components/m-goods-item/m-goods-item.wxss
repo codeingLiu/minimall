@@ -1,0 +1,40 @@
+/* components/m-goods-item/m-goods-item.wxss */
+.goods-item{
+  text-align: center;
+  color: #333;
+  padding-bottom: 40rpx;
+}
+.image{
+  border-radius: 10rpx;
+  width: 100%;
+}
+
+.desc-info{
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+}
+.title{
+ /**限制一行*/
+ white-space: nowrap;
+ /**多余一行的隐藏*/
+ overflow: hidden;
+ /**隐藏方式显示...*/
+ text-overflow: ellipsis;
+ font-size: 28rpx;
+}
+.info{
+  font-size: 26rpx;
+}
+.info .price{
+  color:#ff5777;
+  position: relative;
+}
+
+.info .icon{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx 0 10rpx;
+  top: 5rpx;
+  position: relative
+}

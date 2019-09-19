@@ -1,0 +1,19 @@
+/* components/m-tab-control/m-tab-control.wxss */
+.tab-view{
+  height: 80rpx;
+  display: flex;
+}
+.tab-item{
+  flex: 1;
+  text-align: center;
+}
+
+.active{
+  color: #ff5777;
+  /*增加下划线*/
+  
+}
+.active text{
+  padding: 12rpx 18rpx;
+  border-bottom: 6rpx solid #ff5777;
+}

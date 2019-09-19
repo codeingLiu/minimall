@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<m-swiper list="{{banners}}"></m-swiper>
+
+<!--推荐-->
+<m-recommend recommends="{{recommends}}"></m-recommend>
+
+<!--本周流行-->
+<view class="popular">
+  <image src="/assets/home/popular_bg.jpg" mode="widthFix"/>
+</view>
+
+<!--tab control的数据-->
+<m-tab-control titles="{{titles}}"
+               bind:tabclick="tabclick"/>
+
+<!--展示商品数据--->
+<view class="goods">
+  <block wx:for="{{goods[currentType].list}}" wx:key="index">
+    <m-goods-item class="item"
+                  item="{{item}}"></m-goods-item>
+  </block>
+</view>
