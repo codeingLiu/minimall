@@ -6,6 +6,8 @@ import {
 }from "../../net/home.js"
 const types=['pop','new','sell']
 
+const BACKTOPDIS=1000;
+
 Page({
   /**
    * 页面的初始数据
@@ -27,7 +29,10 @@ Page({
       new:{page:0,list:[]},
       sell:{page:0,list:[]}
     },
-    currentType:'pop'
+    currentType:'pop',
+    showBacktop: false,
+    isFiexd:false,
+    tabScrollTop:0
   },
 
   /**
@@ -109,6 +114,14 @@ Page({
     })
   },
 
+  //监听推荐的图片加载完成
+  loadover(){
+    //获取某个控件距离顶部的高度
+    this.createSelectorQuery().select('#tab-control').boundingClientRect(rect =>{
+      this.data.tabScrollTop=rect.top;
+    }).exec();
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -148,7 +161,31 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    //上拉加载更多
+    // this._getGoodsdata(this.data.currentType);
+  },
 
+  onPageScroll: function(options){
+    const scrollTop = options.scrollTop;
+    //回到顶部
+    const flag=scrollTop >=BACKTOPDIS
+    //官方提示，不建议在onPageScroll 频繁的调用this.setData方法
+    //因为会不断的刷新界面
+    if(flag!=this.data.showBacktop){
+      this.setData({
+        showBacktop:flag
+      })
+    }
+ 
+    //tabcontrol停留效果
+    const flag2=scrollTop>=this.data.tabScrollTop;
+    if(flag2!=this.data.isFiexd){
+      this.setData({
+        isFiexd:flag2
+      })
+    }
+
+    
   },
 
   /**

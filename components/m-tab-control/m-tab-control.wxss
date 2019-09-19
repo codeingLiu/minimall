@@ -2,6 +2,7 @@
 .tab-view{
   height: 80rpx;
   display: flex;
+  background: #fff;
 }
 .tab-item{
   flex: 1;

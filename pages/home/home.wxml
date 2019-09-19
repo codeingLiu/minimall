@@ -3,7 +3,8 @@
 <m-swiper list="{{banners}}"></m-swiper>
 
 <!--推荐-->
-<m-recommend recommends="{{recommends}}"></m-recommend>
+<m-recommend recommends="{{recommends}}"
+             bind:loadover="loadover"></m-recommend>
 
 <!--本周流行-->
 <view class="popular">
@@ -12,12 +13,16 @@
 
 <!--tab control的数据-->
 <m-tab-control titles="{{titles}}"
-               bind:tabclick="tabclick"/>
+               bind:tabclick="tabclick"
+               id="tab-control"
+               class="{{isFiexd?'fiexd':''}}"/>
+<!--tab control的停留效果的占位-->
+<m-tab-control titles="{{titles}}"
+               bind:tabclick="tabclick"
+               wx:if="{{isFiexd}}"/>
 
 <!--展示商品数据--->
-<view class="goods">
-  <block wx:for="{{goods[currentType].list}}" wx:key="index">
-    <m-goods-item class="item"
-                  item="{{item}}"></m-goods-item>
-  </block>
-</view>
+<m-goods goods="{{goods[currentType].list}}"/>
+
+<!--回到顶部-->
+<m-backtop wx:if="{{showBacktop}}"></m-backtop>

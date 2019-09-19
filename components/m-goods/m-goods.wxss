@@ -1,0 +1,13 @@
+/* components/m-goods/m-goods.wxss */
+.goods{ 
+  display: flex;
+  /**宽度包裹，不能出屏幕的外边*/
+  flex-wrap: wrap;
+  /**使得两边的空隙都一样的*/
+  justify-content: space-evenly;
+}
+.goods .item{
+  width:45%;
+  margin-top: 16rpx;
+  position: relative;
+}

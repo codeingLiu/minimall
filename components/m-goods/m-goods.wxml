@@ -1,0 +1,8 @@
+<!--components/m-goods/m-goods.wxml-->
+<!--商品的展示组件-->
+<view class="goods">
+  <block wx:for="{{goods}}" wx:key="index">
+    <m-goods-item class="item"
+                  item="{{item}}"></m-goods-item>
+  </block>
+</view>

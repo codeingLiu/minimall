@@ -2,7 +2,8 @@
   "usingComponents": {
     "m-swiper":"/components/m-swiper/m-swiper",
     "m-tab-control":"/components/m-tab-control/m-tab-control",
-    "m-goods-item": "/components/m-goods-item/m-goods-item",
+    "m-goods": "/components/m-goods/m-goods",
+    "m-backtop": "/components/m-backtop/m-backtop",
     "m-recommend":"./childcpn/m-recommend/m-recommend"
   },
   "navigationBarTitleText": "购物街"

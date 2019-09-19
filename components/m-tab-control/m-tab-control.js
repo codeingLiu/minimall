@@ -32,7 +32,6 @@ Component({
       this.setData({
         currentIndex:index
       })
-
       //2把方法传出去
       this.triggerEvent('tabclick',{index:index},{})
     }

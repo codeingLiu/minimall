@@ -3,15 +3,11 @@
   width:100%;
 }
 
-.goods{ 
-  display: flex;
-  /**宽度包裹，不能出屏幕的外边*/
-  flex-wrap: wrap;
-  /**使得两边的空隙都一样的*/
-  justify-content: space-evenly;
-}
-.goods .item{
-  width:45%;
-  margin-top: 16rpx;
-  position: relative;
+/**可以使控件抽离页面之外，停留在页面的固定位置*/
+.fiexd{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
