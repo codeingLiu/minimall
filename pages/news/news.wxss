@@ -1,0 +1,2 @@
+/* 引用模板的样式 */
+@import '/pages/templete/templete.wxss';

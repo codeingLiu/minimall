@@ -1,0 +1,19 @@
+<!--pages/category/childCpns/m-content/m-content.wxml-->
+<scroll-view class="content" scroll-y>
+  
+  <!--子类展示-->
+  <view class="subcategory">
+    <block wx:for="{{subcategorys}}" wx:key="index">
+      <view class="item">
+       <image src="{{item.image}}" mode="widthFix"></image>
+       <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!--goods商品展示-->
+  <view class="detail">
+   <m-goods goods="{{categoryDetail}}"/>
+  </view>
+  
+</scroll-view>

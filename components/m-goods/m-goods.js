@@ -21,6 +21,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    itemClick(event){
+      // console.log(event)
+      const index =event.currentTarget.dataset.index;
+      this.triggerEvent('itemClick',{index:index},{})
+    }
   }
 })

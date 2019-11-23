@@ -1,0 +1,29 @@
+<!--pages/detailtext/detailtext.wxml-->
+<view class="detail_con">
+  <view class="header">
+     <image calss="bing" src="{{isMusicPaly?coverImageUrl:header}}"></image>
+  </view>
+  <image  bindtap="handleMusic" class="music" src="{{isMusicPaly?'/assets/music/start.png':'/assets/music/stop.png'}}"></image>
+  
+
+  <view class="avter_con">
+    <image src="{{avter}}"/>
+    <text>中国机长</text>
+    <text>发布于</text>
+    <text>nov 09 2019</text>
+  </view>
+  
+  <view class="company">创璞科技</view>
+
+  <view class="share_con">
+   <view class="share">
+     <image src="/assets/profile/cart.png"/>
+     <image src="/assets/profile/message.png"></image>
+   </view>
+   <view class="line"></view>
+  </view>
+
+  <button open-type="share" class="button">转发此文章</button>
+
+  <text class="context">创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技创璞科技</text>
+</view>

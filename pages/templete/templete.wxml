@@ -1,0 +1,19 @@
+<template name="newstemp">
+  <view class="tmpcontainer">
+    <view class="avatar">
+     <image class="avatar" src="/assets/profile/avatar.png"></image>
+     <text>清风小筑 Nov 22 2019</text>
+    </view>
+
+    <view class="company">创璞科技</view>
+    <image class="faceimage" src="/assets/home/popular_bg.jpg"></image>
+    <text class="context">人脸识别，是基于人的脸部特征信息进行身份识别的一种生物识别技术。用摄像机或摄像头采集含有人脸的图像或视频流，并自动在图像中检测和跟踪人脸，进而对检测到的人脸进行脸部识别的一系列相关技术，通常也叫做人像识别、面部识别。</text>
+
+    <view class="look">
+      <image src="/assets/profile/vip.png"/>
+      <text>66</text>
+      <image src="/assets/profile/vip.png"/>
+      <text>80</text>
+     </view>
+  </view>
+</template>

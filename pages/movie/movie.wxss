@@ -1,0 +1,46 @@
+/* pages/movie/movie.wxss */
+.movie_con{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.movie_image{
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.movie_detail{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.movie_name{
+  font-size: 32rpx;
+  color: #000;
+  /**文字单行不换行*/
+  white-space: nowrap;
+   /**单行多于的不显示*/
+  overflow: hidden;
+  /**显示....*/
+  text-overflow: ellipsis;
+}
+
+.movie_year{
+  font-size: 28rpx;
+  color: #666;
+}
+
+.movie_director{
+  font-size: 32rpx;
+  color: #333;
+}
+
+.movie_rating{
+  font-size: 32rpx;
+  /***加粗*/
+  font-weight: bold;
+  color: red;
+}

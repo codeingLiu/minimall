@@ -1,1 +1,17 @@
 /* pages/category/category.wxss */
+.category{
+  display: flex;
+}
+.category m-menu{
+  width: 20%;
+  /**固定菜单栏，右边上下滑动时，菜单栏不会跟着滑动*/
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.category m-content{
+  width: 80%;
+  position: relative;
+  margin-left: 20%;
+}

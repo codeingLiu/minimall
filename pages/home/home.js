@@ -23,7 +23,6 @@ Page({
       { image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569327682&di=d28624fe3e98a2cb356f60bbcda2defe&imgtype=jpg&er=1&src=http%3A%2F%2Ftupian.qqw21.com%2Farticle%2FUploadPic%2F2016-4%2F20164182002450415.jpg', title:'初上秋装'}
     ],
     titles:['流行','精选','新款'],
-
     goods:{
       pop:{page:0,list:[]},
       new:{page:0,list:[]},
@@ -120,6 +119,17 @@ Page({
     this.createSelectorQuery().select('#tab-control').boundingClientRect(rect =>{
       this.data.tabScrollTop=rect.top;
     }).exec();
+  },
+
+  //goods item点击页面跳转
+  goodsItemClick(event){
+    const index=event.detail.index;
+    console.log(index);
+    const title = this.data.goods[this.data.currentType].list[index].title
+    //跳转页面
+    wx.navigateTo({
+      url: '/pages/detail/detail?title=' +title,
+    })
   },
 
   /**

@@ -1,0 +1,7 @@
+<!--引用模板的方式 import-->
+<import src="/pages/templete/templete.wxml" />
+
+<!--使用模板-->
+<view wx:for="{{20}}" wx:key="{{index}}">
+  <template is="newstemp"/>
+</view>

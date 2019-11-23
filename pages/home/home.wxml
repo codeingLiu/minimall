@@ -22,7 +22,8 @@
                wx:if="{{isFiexd}}"/>
 
 <!--展示商品数据--->
-<m-goods goods="{{goods[currentType].list}}"/>
+<m-goods goods="{{goods[currentType].list}}"
+         bind:itemClick="goodsItemClick"/>
 
 <!--回到顶部-->
 <m-backtop wx:if="{{showBacktop}}"></m-backtop>

@@ -1,0 +1,23 @@
+/* pages/profile/childcpn/m-list/m-list.wxss */
+.list{
+  border-top: 20rpx solid #f8f8f8;
+}
+
+.list-item{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  padding-left: 20rpx;
+  border-bottom: 2rpx solid #f8f8f8;
+}
+
+.list-item image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.list-item text{
+  margin-left: 16rpx;
+  vertical-align: middle;
+}

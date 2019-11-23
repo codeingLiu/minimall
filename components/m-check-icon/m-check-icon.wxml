@@ -1,0 +1,6 @@
+<!--components/m-check-icon/m-check-icon.wxml-->
+<icon class="check-icon icon"
+      type="success" size="18"
+      color="{{isChecked ? '#ff5777':'#fff'}}"
+      >
+</icon>

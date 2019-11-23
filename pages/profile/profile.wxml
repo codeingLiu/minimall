@@ -1,2 +1,7 @@
 <!--pages/profile/profile.wxml-->
-<text>个人中心</text>
+<m-header></m-header>
+
+<m-info/>
+
+<m-list infos="{{orderList}}"/>
+<m-list infos="{{serviceList}}"/>

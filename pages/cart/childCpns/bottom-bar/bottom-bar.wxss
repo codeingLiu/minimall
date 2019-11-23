@@ -1,0 +1,40 @@
+/* pages/cart/childCpns/bottom-bar/bottom-bar.wxss */
+.bottom-bar{
+  display: flex;
+  height: 88prx;
+  background: #eee;
+  align-items: center;
+  padding-left: 28rpx;
+  font-size: 28rpx;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.check-box{
+  display: flex;
+  width: 150rpx;
+  align-items: center;
+}
+
+.check{
+  margin-left: 10rpx;
+}
+
+.totalprice{
+  flex: 1;
+  font-size: 30rpx;
+}
+
+.com{
+  background: #ff5777;
+  width: 200rpx;
+  align-items: center;
+}
+
+.totalCount{
+  color: #fff;
+  text-align: center;
+}

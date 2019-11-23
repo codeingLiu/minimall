@@ -1,0 +1,74 @@
+/* pages/detailtext/detailtext.wxss */
+.detail_con{
+  display: flex;
+  flex-direction: column;
+}
+
+.header image{
+  height: 460rpx;
+  width: 100%;
+}
+
+.avter_con{
+  align-content: center;
+  margin: 10rpx;
+}
+.avter_con image{
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.avter_con text{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.company{
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-left: 10rpx;
+}
+.share{
+  float:right;
+  margin-right: 20rpx;
+}
+.share_con{
+  position: relative;
+}
+.share_con image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: 10rpx;
+}
+
+.line{
+  background: #eee;
+  width: 90%;
+  height: 1rpx;
+  position: absolute;
+  top: 45rpx;
+  left: 5%;
+  z-index: -1;
+}
+
+.button{
+  width: 200rpx;
+  height: 80rpx;
+}
+
+.context{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  text-indent: 32rpx;
+}
+
+.music{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}

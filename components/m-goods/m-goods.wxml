@@ -3,6 +3,8 @@
 <view class="goods">
   <block wx:for="{{goods}}" wx:key="index">
     <m-goods-item class="item"
-                  item="{{item}}"></m-goods-item>
+                  item="{{item}}"
+                  bindtap="itemClick"
+                  data-index="{{index}}"></m-goods-item>
   </block>
 </view>

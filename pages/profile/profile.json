@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "m-header":"./childcpn/m-header/m-header",
+    "m-info": "./childcpn/m-info/m-info",
+    "m-list": "./childcpn/m-list/m-list"
+  },
   "navigationBarTitleText": "我的"
 }

@@ -1,2 +1,10 @@
 <!--pages/cart/cart.wxml-->
-<text>购物车</text>
+<view class="cart">
+ <scroll-view class="cart-list" scroll-y>
+   <block wx:for="{{cartList}}" wx:key="index">
+    <m-select goods="{{item}}" index="{{index}}"></m-select>
+   </block>
+ </scroll-view>
+ 
+ <bottom-bar></bottom-bar>
+</view>

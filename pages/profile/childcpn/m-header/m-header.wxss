@@ -1,0 +1,53 @@
+/* pages/profile/childcpn/m-header/m-header.wxss */
+.header{
+  background: #ff5777;
+  height: 170rpx;
+  width: 100%;
+  display: flex;
+  padding: 12rpx 30rpx;
+  color: #fff;
+}
+/**头像*/
+.avatar image{
+  width: 140rpx;
+  height: 140rpx;
+  vertical-align: middle;
+  background: #f2f2f2;
+  border-radius: 70rpx;
+}
+
+.login-info{
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+
+.login-info .login{
+  margin-top: 18rpx;
+  font-size: 36rpx;
+}
+
+.login-info .phone{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+.phone image{
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  bottom: 4rpx;
+  position: relative;
+}
+
+.arrow{
+  right: 30rpx;
+  position: absolute;
+  margin-top: 30rpx;
+}
+
+.arrow image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+

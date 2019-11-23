@@ -1,0 +1,50 @@
+.tmpcontainer{
+  display: flex;
+  flex-direction: column;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  margin: 10rpx 0;
+}
+.avatar{
+  vertical-align: middle;
+}
+.avatar image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.avatar text{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+.company{
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-left: 10rpx;
+}
+.faceimage{
+  width: 100%;
+  height: 480rpx;
+}
+.context{
+  font-size: 32rpx;
+  /*空一个字*/
+  text-indent: 32rpx;
+}
+.look{
+  display: flex;
+  vertical-align: middle;
+}
+.look image{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+
+.look text{
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 10rpx;
+  vertical-align: middle;
+}

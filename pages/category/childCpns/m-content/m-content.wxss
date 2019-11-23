@@ -1,0 +1,27 @@
+/* pages/category/childCpns/m-content/m-content.wxss */
+.content{
+  height: 100%;
+}
+.subcategory{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+.item{
+  width: 33%;
+  text-align: center;
+}
+.item image{
+  width: 80%;
+}
+
+.item view{
+  font-size: 22 rpx;
+  margin: 26rpx 0;
+  color: #555;
+}
+
+.detail{
+  width: 100%;
+}
